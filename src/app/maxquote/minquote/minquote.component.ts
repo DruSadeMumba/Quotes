@@ -28,6 +28,11 @@ export class MinquoteComponent implements OnInit {
     new Quote1 (2, " Sometimes you win, sometimes you learn.", " Anonymous", new Date(), 0, 0),
     new Quote1 (3, " A dream you dream alone is only a dream. A dream you dream together is reality", " Yoko Ono", new Date(), 0, 0)
   ]
+  quotes5:Quote1[] = [
+    new Quote1 (1, " Some people want it to happen, some wish it to happen, others make it happen", " Michael Jordan", new Date(), 0, 0),
+    new Quote1 (2, " It is not a daily increase, but a daily decrease. Hack away at the inessentials", " Bruce Lee", new Date(), 0, 0),
+    new Quote1 (3, " I choose a lazy person to do a hard job, because a lazy person will find an easy way to do it.", " Bill Gates", new Date(), 0, 0)
+  ]
 
 
 
