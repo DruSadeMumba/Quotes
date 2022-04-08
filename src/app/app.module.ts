@@ -9,9 +9,9 @@ import { MaxquoteComponent } from './maxquote/maxquote.component';
 import { FooterComponent } from './footer/footer.component';
 import { HighlightDirective } from './highlight.directive';
 import { TimelapsePipe } from './timelapse.pipe';
-import { MinquoteComponent } from './minquote/minquote.component';
-import { MinquoteFormComponent } from './minquote-form/minquote-form.component';
-import { MinquoteDetailComponent } from './minquote/minquote-detail/minquote-detail.component';
+import { MinquoteComponent } from './maxquote/minquote/minquote.component';
+import { MinquoteFormComponent } from './maxquote/minquote-form/minquote-form.component';
+import { MinquoteDetailsComponent } from './maxquote/minquote/minquote-details/minquote-details.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,7 @@ import { MinquoteDetailComponent } from './minquote/minquote-detail/minquote-det
     TimelapsePipe,
     MinquoteComponent,
     MinquoteFormComponent,
-    MinquoteDetailComponent
+    MinquoteDetailsComponent
   ],
   imports: [
     BrowserModule,

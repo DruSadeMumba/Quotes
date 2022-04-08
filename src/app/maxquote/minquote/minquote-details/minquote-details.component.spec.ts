@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MinquoteDetailComponent } from './minquote-detail.component';
+import { MinquoteDetailsComponent } from './minquote-details.component';
 
-describe('MinquoteDetailComponent', () => {
-  let component: MinquoteDetailComponent;
-  let fixture: ComponentFixture<MinquoteDetailComponent>;
+describe('MinquoteDetailsComponent', () => {
+  let component: MinquoteDetailsComponent;
+  let fixture: ComponentFixture<MinquoteDetailsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MinquoteDetailComponent ]
+      declarations: [ MinquoteDetailsComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MinquoteDetailComponent);
+    fixture = TestBed.createComponent(MinquoteDetailsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
