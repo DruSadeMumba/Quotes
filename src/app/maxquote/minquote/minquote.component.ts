@@ -13,7 +13,13 @@ export class MinquoteComponent implements OnInit {
     new Quote1 (2, " To enjoy the glow of good health, you must exercise.", " Gene Tunney", new Date(1995,5,14), 0, 0),
     new Quote1 (3, " The hardest thing about exercise is to start doing it. Once you are doing exercise regularly, the hardest thing is to stop it.", " Erin Gray", new Date(2013,8,7), 0, 0)
   ]
-  
+  quotes2:Quote1[] = [
+    new Quote1 (1, " Education is the passport to the future, for tomorrow belongs to those who prepare for it today.", " Malcom X", new Date(), 0, 0),
+    new Quote1 (1, " Change is the end result of all true learning", " Leo Buscaglia", new Date(), 0, 0),
+    new Quote1 (1, " Education is what remains after one has forgotten everything he/she learned in school", " Albert Einstein", new Date(), 0, 0)
+  ]
+
+
   constructor() { }
 
   ngOnInit(): void {

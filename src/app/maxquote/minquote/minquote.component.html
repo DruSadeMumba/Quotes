@@ -8,6 +8,9 @@
   </div>
   <div id="educational">
     <h1>EDUCATIONAL QUOTES</h1>
+    <ul *ngFor="let quote2 of quotes2">
+      <li>{{quote2.quote}} ~{{quote2.author}}</li>
+    </ul>
     <hr>
   </div>
   <div id="religious">
