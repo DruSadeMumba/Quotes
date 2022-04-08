@@ -1,0 +1,19 @@
+img  {
+  width: 320px;
+  height: 320px;
+}
+.card  {
+  height: 400px;
+  width: 400px;
+  text-align: center;
+  justify-content: center;
+  margin: 20px;
+}
+.card-body  {
+  cursor: pointer;
+}
+h1  {
+  text-align: center;
+  font-size: 70px;
+  font-weight: 500;
+}
