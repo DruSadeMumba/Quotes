@@ -8,6 +8,7 @@ import { LandingComponent } from './landing/landing.component';
 import { MaxquoteComponent } from './maxquote/maxquote.component';
 import { FooterComponent } from './footer/footer.component';
 import { HighlightDirective } from './highlight.directive';
+import { TimelapsePipe } from './timelapse.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HighlightDirective } from './highlight.directive';
     LandingComponent,
     MaxquoteComponent,
     FooterComponent,
-    HighlightDirective
+    HighlightDirective,
+    TimelapsePipe
   ],
   imports: [
     BrowserModule,
