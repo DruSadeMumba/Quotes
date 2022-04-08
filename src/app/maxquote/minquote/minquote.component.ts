@@ -15,9 +15,15 @@ export class MinquoteComponent implements OnInit {
   ]
   quotes2:Quote1[] = [
     new Quote1 (1, " Education is the passport to the future, for tomorrow belongs to those who prepare for it today.", " Malcom X", new Date(), 0, 0),
-    new Quote1 (1, " Change is the end result of all true learning", " Leo Buscaglia", new Date(), 0, 0),
-    new Quote1 (1, " Education is what remains after one has forgotten everything he/she learned in school", " Albert Einstein", new Date(), 0, 0)
+    new Quote1 (2, " Change is the end result of all true learning", " Leo Buscaglia", new Date(), 0, 0),
+    new Quote1 (3, " Education is what remains after one has forgotten everything he/she learned in school", " Albert Einstein", new Date(), 0, 0)
   ]
+  quotes3:Quote1[] = [
+    new Quote1 (1, " When I do good I feel good, when I do bad I feel bad. That's my religion", " Abraham Lincoln", new Date(), 0, 0),
+    new Quote1 (2, " Be still and know that I am God", " God", new Date(), 0, 0),
+    new Quote1 (3, " Be kind to all creatures. This is the true religion", " Buddha", new Date(), 0, 0)
+  ]
+
 
 
   constructor() { }
