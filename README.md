@@ -1,4 +1,3 @@
-READMe template
 
 #   QUOTES
 #### This is an interactive inspirational quote application, {8 March 2022}
