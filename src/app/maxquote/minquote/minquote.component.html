@@ -1,6 +1,9 @@
 <div class="container">
   <div id="healthandfitness">
     <h1>FITNESS AND HEALTH QUOTES</h1>
+    <ul *ngFor="let quote1 of quotes1">
+      <li>{{quote1.quote}} ~{{quote1.author}}</li>
+    </ul>
     <hr>
   </div>
   <div id="educational">
