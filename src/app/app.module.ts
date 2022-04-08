@@ -7,6 +7,7 @@ import { TopnavComponent } from './topnav/topnav.component';
 import { LandingComponent } from './landing/landing.component';
 import { MaxquoteComponent } from './maxquote/maxquote.component';
 import { FooterComponent } from './footer/footer.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FooterComponent } from './footer/footer.component';
     TopnavComponent,
     LandingComponent,
     MaxquoteComponent,
-    FooterComponent
+    FooterComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
