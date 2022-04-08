@@ -15,10 +15,16 @@
   </div>
   <div id="religious">
     <h1>RELIGIOUS QUOTES</h1>
+    <ul *ngFor="let quote3 of quotes3">
+      <li>{{quote3.quote}} ~{{quote3.author}}</li>
+    </ul>
     <hr>
   </div>
   <div id="relationship">
     <h1>RELATIONSHIP QUOTES</h1>
+    <ul *ngFor="let quote4 of quotes4">
+      <li>{{quote4.quote}} ~{{quote4.author}}</li>
+    </ul>
     <hr>
   </div>
   <div id="work">

@@ -23,6 +23,12 @@ export class MinquoteComponent implements OnInit {
     new Quote1 (2, " Be still and know that I am God", " God", new Date(), 0, 0),
     new Quote1 (3, " Be kind to all creatures. This is the true religion", " Buddha", new Date(), 0, 0)
   ]
+  quotes4:Quote1[] = [
+    new Quote1 (1, " Assumptions are the termites of relationships", " Henry Winkler", new Date(), 0, 0),
+    new Quote1 (2, " Sometimes you win, sometimes you learn.", " Anonymous", new Date(), 0, 0),
+    new Quote1 (3, " A dream you dream alone is only a dream. A dream you dream together is reality", " Yoko Ono", new Date(), 0, 0)
+  ]
+
 
 
 
