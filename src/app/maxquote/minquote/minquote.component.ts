@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Quote1 } from 'src/app/quote1';
 
 @Component({
   selector: 'app-minquote',
@@ -7,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MinquoteComponent implements OnInit {
 
+  quotes:Quote1[] = [
+    
+  ]
   constructor() { }
 
   ngOnInit(): void {
