@@ -5,10 +5,11 @@ export class Quote1 {
   showDescription4: boolean;
   showDescription5: boolean;
   
-  constructor(public id: number, public quote: string, public author: string, public submitDate: Date, public upvote: number, public downvote: number){
+  constructor(public id: number, public quote: string, public author: string, public submitby: string ,public submitDate: Date, public upvote: number, public downvote: number){
     this.id = id;
     this.quote = quote;
     this.author = author;
+    this.submitby = submitby;
     this.submitDate = submitDate;
     this.upvote = upvote;
     this.downvote = downvote;

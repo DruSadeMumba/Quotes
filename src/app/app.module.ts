@@ -12,6 +12,7 @@ import { TimelapsePipe } from './timelapse.pipe';
 import { MinquoteComponent } from './maxquote/minquote/minquote.component';
 import { MinquoteFormComponent } from './maxquote/minquote-form/minquote-form.component';
 import { MinquoteDetailsComponent } from './maxquote/minquote/minquote-details/minquote-details.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,8 +30,8 @@ import { MinquoteDetailsComponent } from './maxquote/minquote/minquote-details/m
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-    
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
