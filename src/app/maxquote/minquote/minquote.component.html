@@ -2,7 +2,7 @@
   <div id="healthandfitness">
     <h1>FITNESS AND HEALTH QUOTES</h1>
     <ul *ngFor="let quote1 of quotes1">
-      <div *ngIf="quote1.upvote == highest1; then highlight else empty"></div>
+      <div *ngIf="quote1.upvote == highest1 && quote1.upvote > 0; then highlight else empty"></div>
       <ng-template #highlight>
         <li appHighlight>{{quote1.quote}} ~{{quote1.author}}</li>
         <li>{{quote1.upvote}} {{quote1.downvote}}</li>
@@ -17,7 +17,7 @@
   <div id="educational">
     <h1>EDUCATIONAL QUOTES</h1>
     <ul *ngFor="let quote2 of quotes2">
-      <div *ngIf="quote2.upvote == highest2; then highlight else empty"></div>
+      <div *ngIf="quote2.upvote == highest2 && quote2.upvote > 0; then highlight else empty"></div>
       <ng-template #highlight>
         <li appHighlight>{{quote2.quote}} ~{{quote2.author}}</li>
         <li>{{quote2.upvote}} {{quote2.downvote}}</li>
@@ -32,7 +32,7 @@
   <div id="religious">
     <h1>RELIGIOUS QUOTES</h1>
     <ul *ngFor="let quote3 of quotes3">
-      <div *ngIf="quote3.upvote == highest3; then highlight else empty"></div>
+      <div *ngIf="quote3.upvote == highest3 && quote3.upvote > 0; then highlight else empty"></div>
       <ng-template #highlight>
         <li appHighlight>{{quote3.quote}} ~{{quote3.author}}</li>
         <li>{{quote3.upvote}} {{quote3.downvote}}</li>
@@ -48,7 +48,7 @@
   <div id="relationship">
     <h1>RELATIONSHIP QUOTES</h1>
     <ul *ngFor="let quote4 of quotes4">
-      <div *ngIf="quote4.upvote == highest3; then highlight else empty"></div>
+      <div *ngIf="quote4.upvote == highest4 && quote4.upvote > 0; then highlight else empty"></div>
       <ng-template #highlight>
         <li appHighlight>{{quote4.quote}} ~{{quote4.author}}</li>
         <li>{{quote4.upvote}} {{quote4.downvote}}</li>
@@ -63,7 +63,7 @@
   <div id="work">
     <h1>WORK</h1>
     <ul *ngFor="let quote5 of quotes5">
-      <div *ngIf="quote5.upvote == highest3; then highlight else empty"></div>
+      <div *ngIf="quote5.upvote == highest5 && quote5.upvote > 0; then highlight else empty"></div>
       <ng-template #highlight>
         <li appHighlight>{{quote5.quote}} ~{{quote5.author}}</li>
         <li>{{quote5.upvote}} {{quote5.downvote}}</li>
