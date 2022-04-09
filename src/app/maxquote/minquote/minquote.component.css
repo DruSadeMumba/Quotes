@@ -1,0 +1,39 @@
+ .card1  {
+  background-image: url(../../../assets/landing-img/beach.jpg);
+  background-size: cover;
+  color: white;
+  font-size: 25px;
+}
+.card2  {
+  background-image: url(../../../assets/landing-img/desert.jpg);
+  background-size: cover;
+  color: white;
+  font-size: 25px;
+}
+.card3  {
+  background-image: url(../../../assets/landing-img/mountain.jpg);
+  background-size: cover; 
+  color: white;
+  font-size: 25px;
+}
+.card4  {
+  background-image: url(../../../assets/landing-img/waterfall.jpg);
+  background-size: cover; 
+  color: white;
+  font-size: 25px;
+}
+.card5  {
+  background-image: url(../../../assets/landing-img/river.jpg);
+  background-size: cover;
+  color: white;
+  font-size: 25px;
+} 
+button  {
+  color: black;
+  font-size: 25px;
+}
+
+button:hover  {
+  background-color: green;
+  color: azure;
+}

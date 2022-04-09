@@ -1,0 +1,12 @@
+
+#alllanding  {
+  background-image: url(../../assets/landing-img/forest.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 350px;
+  color: white;
+}
+.overlay-text  {
+  font-size: 100px;
+}
+
