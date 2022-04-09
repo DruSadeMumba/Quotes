@@ -20,6 +20,21 @@ export class MinquoteComponent implements OnInit {
     quote.submitDate = new Date(quote.submitDate);
     this.quotes1.push(quote);
   }
+  
+  highestvote1() {
+    let upVote1 = []
+    let highest1 : number
+    for (let i = 0; i < this.quotes1.length; i++ ) {
+      upVote1.push(this.quotes1[i].upvote)
+    }
+
+    upVote1.sort(function (a, b) {
+      return b - a 
+    })
+    highest1 = upVote1[0]
+    return highest1;
+  }
+
 
   arr1: number[] = this.quotes1.map(quote=>quote.upvote)
   highest1 = Math.max(...this.arr1)
@@ -27,6 +42,14 @@ export class MinquoteComponent implements OnInit {
   toggleDetails1(index: number): void{
     this.quotes1[index].showDescription1 = !this.quotes1[index].showDescription1;
   }
+
+  upVotes1(index: number): void{
+    this.quotes1[index].upvote ++;
+  } 
+   downVotes1(index: number): void{
+    this.quotes1[index].downvote ++;
+  } 
+
 
 
   quotes2:Quote1[] = [
@@ -42,12 +65,31 @@ export class MinquoteComponent implements OnInit {
     this.quotes2.push(quote);
   }
 
-  arr2: number[] = this.quotes2.map(quote=>quote.upvote)
-  highest2 = Math.max(...this.arr2)
+  highestvote2() {
+    let Upvote2 = []
+    let highest2 : number
+    for (let i = 0; i < this.quotes1.length; i++ ) {
+      Upvote2.push(this.quotes1[i].upvote)
+    }
+
+    Upvote2.sort(function (a, b) {
+      return b - a 
+    })
+    highest2 = Upvote2[0]
+    return highest2;
+  }
 
   toggleDetails2(index: number): void{
     this.quotes2[index].showDescription2 = !this.quotes2[index].showDescription2;
   }
+  
+  upVotes2(index: number): void{
+    this.quotes2[index].upvote ++;
+  } 
+   downVotes2(index: number): void{
+    this.quotes2[index].downvote ++;
+  } 
+
 
 
   quotes3:Quote1[] = [
@@ -63,12 +105,31 @@ export class MinquoteComponent implements OnInit {
     this.quotes3.push(quote);
   }
 
-  arr3: number[] = this.quotes3.map(quote=>quote.upvote)
-  highest3 = Math.max(...this.arr3)
+  highestvotet3() {
+    let Upvote3 = []
+    let highest3 : number
+    for (let i = 0; i < this.quotes1.length; i++ ) {
+      Upvote3.push(this.quotes1[i].upvote)
+    }
+
+    Upvote3.sort(function (a, b) {
+      return b - a 
+    })
+    highest3 = Upvote3[0]
+    return highest3;
+  }
 
   toggleDetails3(index: number): void{
     this.quotes3[index].showDescription3 = !this.quotes3[index].showDescription3;
   }
+   
+  upVotes3(index: number): void{
+    this.quotes3[index].upvote ++;
+  } 
+   downVotes3(index: number): void{
+    this.quotes3[index].downvote ++;
+  } 
+
 
 
   quotes4:Quote1[] = [
@@ -85,13 +146,31 @@ export class MinquoteComponent implements OnInit {
   }
 
 
-  arr4: number[] = this.quotes4.map(quote=>quote.upvote)
-  highest4 = Math.max(...this.arr4)
+  highestvote4() {
+    let Upvote4 = []
+    let highest4 : number
+    for (let i = 0; i < this.quotes1.length; i++ ) {
+      Upvote4.push(this.quotes1[i].upvote)
+    }
+
+    Upvote4.sort(function (a, b) {
+      return b - a 
+    })
+    highest4 = Upvote4[0]
+    return highest4;
+  }
 
   toggleDetails4(index: number): void{
     this.quotes4[index].showDescription4 = !this.quotes4[index].showDescription4;
   }
-  
+
+  upVotes4(index: number): void{
+    this.quotes4[index].upvote ++;
+  } 
+   downVotes4(index: number): void{
+    this.quotes4[index].downvote ++;
+  } 
+
 
   quotes5:Quote1[] = [
     new Quote1 (1, " Some people want it to happen, some wish it to happen, others make it happen", " Michael Jordan", "Anonymous", new Date(2000,0,1), 0, 0),
@@ -106,21 +185,28 @@ export class MinquoteComponent implements OnInit {
     this.quotes5.push(quote);
   }
 
-  arr5: number[] = this.quotes5.map(quote=>quote.upvote)
-  highest5 = Math.max(...this.arr5)
+  highestvote5() {
+    let Upvote5 = []
+    let highest5 : number
+    for (let i = 0; i < this.quotes1.length; i++ ) {
+      Upvote5.push(this.quotes1[i].upvote)
+    }
 
+    Upvote5.sort(function (a, b) {
+      return b - a 
+    })
+    highest5 = Upvote5[0]
+    return highest5;
+  }
   toggleDetails5(index: number): void{
     this.quotes5[index].showDescription5 = !this.quotes5[index].showDescription5;
   }
-
   
-
-  
-   upVotes(index: number): void{
-    this.quotes1[index].upvote ++;
-  }  
-   downVotes(index: number): void{
-    this.quotes1[index].downvote ++;
+  upVotes5(index: number): void{
+    this.quotes5[index].upvote ++;
+  } 
+   downVotes5(index: number): void{
+    this.quotes5[index].downvote ++;
   } 
 
  

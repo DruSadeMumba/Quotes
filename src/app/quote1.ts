@@ -22,49 +22,5 @@ export class Quote1 {
   }
 }
 
-/* export class Quote2 {
 
-  constructor(public id: number, public quote: string, public author: string, public submitDate: Date, public upvote: number, public downvote: number){
-    this.id = id;
-    this.quote = quote;
-    this.author = author;
-    this.submitDate = submitDate;
-    this.upvote = upvote;
-    this.downvote = downvote;
-  }
-}
 
-export class Quote3 {
-
-  constructor(public id: number, public quote: string, public author: string, public submitDate: Date, public upvote: number, public downvote: number){
-    this.id = id;
-    this.quote = quote;
-    this.author = author;
-    this.submitDate = submitDate;
-    this.upvote = upvote;
-    this.downvote = downvote;
-  }
-}
-
-export class Quote4 {
-  constructor(public id: number, public quote: string, public author: string, public submitDate: Date, public upvote: number, public downvote: number){
-    this.id = id;
-    this.quote = quote;
-    this.author = author;
-    this.submitDate = submitDate;
-    this.upvote = upvote;
-    this.downvote = downvote;
-  }
-}
-
-export class Quote5 {
-  constructor(public id: number, public quote: string, public author: string, public submitDate: Date, public upvote: number, public downvote: number){
-    this.id = id;
-    this.quote = quote;
-    this.author = author;
-    this.submitDate = submitDate;
-    this.upvote = upvote;
-    this.downvote = downvote;
-  }
-}
- */

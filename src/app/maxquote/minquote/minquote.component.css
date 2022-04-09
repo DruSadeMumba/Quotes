@@ -12,13 +12,13 @@
 }
 .card3  {
   background-image: url(../../../assets/landing-img/mountain.jpg);
-  background-size: cover;
+  background-size: cover; 
   color: white;
   font-size: 25px;
 }
 .card4  {
   background-image: url(../../../assets/landing-img/waterfall.jpg);
-  background-size: cover;
+  background-size: cover; 
   color: white;
   font-size: 25px;
 }
