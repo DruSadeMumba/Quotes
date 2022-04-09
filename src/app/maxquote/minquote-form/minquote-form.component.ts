@@ -17,7 +17,6 @@ export class MinquoteFormComponent implements OnInit {
   }
 
   
-
   constructor() { }
 
   ngOnInit(): void {

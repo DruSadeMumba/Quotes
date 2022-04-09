@@ -1,31 +1,31 @@
 <div class="container-fluid">
-  <h2 class="text-center">Create a new Quote</h2>
   <form #quoteForm = ngForm (ngSubmit)= 'submitQuote1()'>
+    <h2 class="text-center">Create a new Quote</h2>
     <div class="form-group">
-      <label for="quote">Quote</label>
-      <textarea class="form-control" id="quote" rows="4" [(ngModel)] = "newQuote1.quote" #quote='ngModel' name="quote" required></textarea>
+      <textarea class="form-control" id="quote" rows="4" [(ngModel)] = "newQuote1.quote" #quote='ngModel' name="quote" required></textarea><br>
+      <label for="quote">Quote</label><br>
       <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
         <p>Quote is required</p>
       </div>
-    </div>
+    </div><br>
     <div class="form-group">
-      <label for="author">Author</label>
-      <input type="text" required class="form-control" id="author" [(ngModel)] = "newQuote1.author" #author='ngModel' name="author">
+      <input type="text" required class="form-control" id="author" [(ngModel)] = "newQuote1.author" #author='ngModel' name="author"><br>
+      <label for="author">Author</label><br>
       <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
         <p>Author is required</p>
       </div>
-    </div>
+    </div><br>
     <div class="form-group">
-      <label for="submitby">Submitted By:</label>
-      <input type="text" required class="form-control" id="submitby" [(ngModel)] = "newQuote1.submitby" #submitby='ngModel' name="submitby">
+      <input type="text" required class="form-control" id="submitby" [(ngModel)] = "newQuote1.submitby" #submitby='ngModel' name="submitby"><br>
+      <label for="submitby">Submitted By:</label><br>
       <div [hidden]="submitby.valid || submitby.pristine" class="alert alert-danger">
         <p>Name is required</p>
       </div>
-    </div>
+    </div><br>
     <div class="form-group">
-      <label for="date">Date</label>
-      <input type='date' id="date" required>
-    </div>
+      <input type='date' id="date" required><br>
+      <label for="date">Date</label><br>
+    </div><br>
     <button type="submit" class="btn btn-success">Add Quote</button>
   </form>
 </div>

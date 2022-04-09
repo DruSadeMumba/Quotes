@@ -113,6 +113,17 @@ export class MinquoteComponent implements OnInit {
     this.quotes5[index].showDescription5 = !this.quotes5[index].showDescription5;
   }
 
+  
+
+  
+   upVotes(index: number): void{
+    this.quotes1[index].upvote ++;
+  }  
+   downVotes(index: number): void{
+    this.quotes1[index].downvote ++;
+  } 
+
+ 
 
   constructor() { }
 

@@ -10,15 +10,8 @@ export class MinquoteDetailsComponent implements OnInit {
 
   @Input()
   quote1!: Quote1;
-  @Input()
-  quote2!: Quote1;
-  @Input()
-  quote3!: Quote1;
-  @Input()
-  quote4!: Quote1;
-  @Input()
-  quote5!: Quote1;
-
+  
+  
 
   constructor() { }
 

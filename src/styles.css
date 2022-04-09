@@ -11,4 +11,12 @@
 
 h1  {
   font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 25px;
+}
+form  {
+  background-color: transparent;
+}
+img  {
+  opacity: 0.8;
 }
