@@ -6,7 +6,7 @@
         <div class="col-md-6">
           <div id="healthandfitness">
             <ul *ngFor="let quote1 of quotes1; let i = index">
-              <div *ngIf="highestvote1() != quote1.upvote && quote1.upvote == 0; then highlight else empty"></div>
+              <div *ngIf="highestvote1() != quote1.upvote &&  quote1.upvote > 0; then highlight else empty"></div>
               <ng-template #highlight>
                 <li appHighlight>{{quote1.quote}}</li>
               </ng-template>
@@ -44,7 +44,7 @@
         <div class="col-md-6">
           <div id="educational">
             <ul *ngFor="let quote2 of quotes2; let i = index">
-              <div *ngIf="highestvote2() != quote2.upvote && quote2.upvote == 0; then highlight else empty"></div>
+              <div *ngIf="highestvote2() != quote2.upvote && quote2.upvote > 0; then highlight else empty"></div>
               <ng-template #highlight>
                 <li appHighlight>{{quote2.quote}}</li>
               </ng-template>
@@ -82,7 +82,7 @@
         <div class="col-md-6">
           <div id="religious">
             <ul *ngFor="let quote3 of quotes3 ; let i = index">
-              <div *ngIf="highestvotet3() != quote3.upvote && quote3.upvote == 0; then highlight else empty"></div>
+              <div *ngIf="highestvote3() != quote3.upvote && quote3.upvote > 0; then highlight else empty"></div>
               <ng-template #highlight>
                 <li appHighlight>{{quote3.quote}}</li>
               </ng-template>
@@ -120,7 +120,7 @@
         <div class="col-md-6">
           <div id="relationship">
             <ul *ngFor="let quote4 of quotes4; let i = index">
-              <div *ngIf="highestvote4() != quote4.upvote && quote4.upvote == 0; then highlight else empty"></div>
+              <div *ngIf="highestvote4() != quote4.upvote && quote4.upvote > 0; then highlight else empty"></div>
               <ng-template #highlight>
                 <li appHighlight>{{quote4.quote}}</li>
               </ng-template>
@@ -158,7 +158,7 @@
         <div class="col-md-6">
           <div id="work">
             <ul *ngFor="let quote5 of quotes5; let i = index">
-              <div *ngIf="highestvote5() != quote5.upvote && quote5.upvote == 0; then highlight else empty"></div>
+              <div *ngIf="highestvote5() != quote5.upvote && quote5.upvote > 0; then highlight else empty"></div>
               <ng-template #highlight>
                 <li appHighlight>{{quote5.quote}}</li>
               </ng-template>
