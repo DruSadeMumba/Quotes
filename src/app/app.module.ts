@@ -25,10 +25,12 @@ import { MinquoteDetailsComponent } from './maxquote/minquote/minquote-details/m
     MinquoteComponent,
     MinquoteFormComponent,
     MinquoteDetailsComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
