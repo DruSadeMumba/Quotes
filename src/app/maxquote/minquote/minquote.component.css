@@ -37,3 +37,9 @@ button:hover  {
   background-color: green;
   color: azure;
 }
+#wet  {
+  background-color: transparent;
+  border-radius: 15px;
+  border-color: black;
+  border-width: 2px;
+}

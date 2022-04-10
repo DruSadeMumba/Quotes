@@ -6,27 +6,31 @@
         <div class="col-md-6">
           <div id="healthandfitness">
             <ul *ngFor="let quote1 of quotes1; let i = index">
-              <div *ngIf="highestvote1() != quote1.upvote &&  quote1.upvote > 0; then highlight else empty"></div>
-              <ng-template #highlight>
-                <li appHighlight>{{quote1.quote}}</li>
-              </ng-template>
-              <ng-template #empty>
-                <li>{{quote1.quote}}</li>
-              </ng-template>
-              <div class="togglebtn">
-                <button (click)='toggleDetails1(i)' class="btn btn1">Details</button>
-              </div>
-              <div *ngIf='quote1.showDescription1'>
-                <app-minquote-details [quote1] = "quote1"></app-minquote-details>
-                <div>
-                  <p> {{quote1.upvote}} <button class="upvote btn btn-success btn-sm" (click)="upVotes1(i)">Upvote</button>
-                  </p>
+              <div class="card" id="wet">
+                <div class="card-body">
+                  <div *ngIf="highestvote1() != quote1.upvote &&  quote1.upvote > 0; then highlight else empty"></div>
+                  <ng-template #highlight>
+                    <li appHighlight>{{quote1.quote}}</li>
+                  </ng-template>
+                  <ng-template #empty>
+                    <li>{{quote1.quote}}</li>
+                  </ng-template>
+                  <div class="togglebtn">
+                    <button (click)='toggleDetails1(i)' class="btn btn1">Details</button>
+                  </div>
+                  <div *ngIf='quote1.showDescription1'>
+                    <app-minquote-details [quote1] = "quote1"></app-minquote-details>
+                    <div>
+                      <p> {{quote1.upvote}} <button class="upvote btn btn-success btn-sm" (click)="upVotes1(i)">Upvote</button>
+                      </p>
+                    </div>
+                    <div>
+                      <p> {{quote1.downvote}} <button class="downvote btn btn-danger btn-sm" (click)="downVotes1(i)">Downvote</button>
+                      </p>
+                    </div><br>
+                  </div><br>
                 </div>
-                <div>
-                  <p> {{quote1.downvote}} <button class="downvote btn btn-danger btn-sm" (click)="downVotes1(i)">Downvote</button>
-                  </p>
-                </div><br>
-              </div><br>
+              </div>
             </ul>
           </div>
         </div>
@@ -44,27 +48,31 @@
         <div class="col-md-6">
           <div id="educational">
             <ul *ngFor="let quote2 of quotes2; let i = index">
-              <div *ngIf="highestvote2() != quote2.upvote && quote2.upvote > 0; then highlight else empty"></div>
-              <ng-template #highlight>
-                <li appHighlight>{{quote2.quote}}</li>
-              </ng-template>
-              <ng-template #empty>
-                <li>{{quote2.quote}}</li>
-              </ng-template>
-              <div class="togglebtn">
-                <button (click)='toggleDetails2(i)' class="btn btn2">Details</button>
-              </div>
-              <div *ngIf='quote2.showDescription2'>
-                <app-minquote-details [quote1] = "quote2"></app-minquote-details>
-                <div>
-                  <p> {{quote2.upvote}} <button class="upvote btn btn-success btn-sm" (click)="upVotes2(i)">Upvote</button>
-                  </p>
+              <div class="card" id="wet">
+                <div class="card-body">
+                  <div *ngIf="highestvote2() != quote2.upvote && quote2.upvote > 0; then highlight else empty"></div>
+                  <ng-template #highlight>
+                    <li appHighlight>{{quote2.quote}}</li>
+                  </ng-template>
+                  <ng-template #empty>
+                    <li>{{quote2.quote}}</li>
+                  </ng-template>
+                  <div class="togglebtn">
+                    <button (click)='toggleDetails2(i)' class="btn btn2">Details</button>
+                  </div>
+                  <div *ngIf='quote2.showDescription2'>
+                    <app-minquote-details [quote1] = "quote2"></app-minquote-details>
+                    <div>
+                      <p> {{quote2.upvote}} <button class="upvote btn btn-success btn-sm" (click)="upVotes2(i)">Upvote</button>
+                      </p>
+                    </div>
+                    <div>
+                      <p> {{quote2.downvote}} <button class="downvote btn btn-danger btn-sm" (click)="downVotes2(i)">Downvote</button>
+                      </p>
+                    </div><br>
+                  </div><br>
                 </div>
-                <div>
-                  <p> {{quote2.downvote}} <button class="downvote btn btn-danger btn-sm" (click)="downVotes2(i)">Downvote</button>
-                  </p>
-                </div><br>
-              </div><br>
+              </div>
             </ul>
           </div>
         </div>
@@ -82,27 +90,31 @@
         <div class="col-md-6">
           <div id="religious">
             <ul *ngFor="let quote3 of quotes3 ; let i = index">
-              <div *ngIf="highestvote3() != quote3.upvote && quote3.upvote > 0; then highlight else empty"></div>
-              <ng-template #highlight>
-                <li appHighlight>{{quote3.quote}}</li>
-              </ng-template>
-              <ng-template #empty>
-                <li>{{quote3.quote}}</li>
-              </ng-template>
-              <div class="togglebtn">
-                <button (click)='toggleDetails3(i)' class="btn btn3">Details</button>
-              </div>
-              <div *ngIf='quote3.showDescription3'>
-                <app-minquote-details [quote1] = "quote3"></app-minquote-details>
-                <div>
-                  <p> {{quote3.upvote}} <button class="upvote btn btn-success btn-sm" (click)="upVotes3(i)">Upvote</button>
-                  </p>
+              <div class="card" id="wet">
+                <div class="card-body">
+                  <div *ngIf="highestvote3() != quote3.upvote && quote3.upvote > 0; then highlight else empty"></div>
+                  <ng-template #highlight>
+                    <li appHighlight>{{quote3.quote}}</li>
+                  </ng-template>
+                  <ng-template #empty>
+                    <li>{{quote3.quote}}</li>
+                  </ng-template>
+                  <div class="togglebtn">
+                    <button (click)='toggleDetails3(i)' class="btn btn3">Details</button>
+                  </div>
+                  <div *ngIf='quote3.showDescription3'>
+                    <app-minquote-details [quote1] = "quote3"></app-minquote-details>
+                    <div>
+                      <p> {{quote3.upvote}} <button class="upvote btn btn-success btn-sm" (click)="upVotes3(i)">Upvote</button>
+                      </p>
+                    </div>
+                    <div>
+                      <p> {{quote3.downvote}} <button class="downvote btn btn-danger btn-sm" (click)="downVotes3(i)">Downvote</button>
+                      </p>
+                    </div><br>
+                  </div><br>
                 </div>
-                <div>
-                  <p> {{quote3.downvote}} <button class="downvote btn btn-danger btn-sm" (click)="downVotes3(i)">Downvote</button>
-                  </p>
-                </div><br>
-              </div><br>
+              </div>
             </ul>
           </div>
         </div>
@@ -120,27 +132,31 @@
         <div class="col-md-6">
           <div id="relationship">
             <ul *ngFor="let quote4 of quotes4; let i = index">
-              <div *ngIf="highestvote4() != quote4.upvote && quote4.upvote > 0; then highlight else empty"></div>
-              <ng-template #highlight>
-                <li appHighlight>{{quote4.quote}}</li>
-              </ng-template>
-              <ng-template #empty>
-                <li>{{quote4.quote}}</li>
-              </ng-template>
-              <div class="togglebtn">
-                <button (click)='toggleDetails4(i)' class="btn btn4">Details</button>
-              </div>
-              <div *ngIf='quote4.showDescription4'>
-                <app-minquote-details [quote1] = "quote4"></app-minquote-details>
-                <div>
-                  <p> {{quote4.upvote}} <button class="upvote btn btn-success btn-sm" (click)="upVotes4(i)">Upvote</button>
-                  </p>
+              <div class="card" id="wet">
+                <div class="card-body">
+                  <div *ngIf="highestvote4() != quote4.upvote && quote4.upvote > 0; then highlight else empty"></div>
+                  <ng-template #highlight>
+                    <li appHighlight>{{quote4.quote}}</li>
+                  </ng-template>
+                  <ng-template #empty>
+                    <li>{{quote4.quote}}</li>
+                  </ng-template>
+                  <div class="togglebtn">
+                    <button (click)='toggleDetails4(i)' class="btn btn4">Details</button>
+                  </div>
+                  <div *ngIf='quote4.showDescription4'>
+                    <app-minquote-details [quote1] = "quote4"></app-minquote-details>
+                    <div>
+                      <p> {{quote4.upvote}} <button class="upvote btn btn-success btn-sm" (click)="upVotes4(i)">Upvote</button>
+                      </p>
+                    </div>
+                    <div>
+                      <p> {{quote4.downvote}} <button class="downvote btn btn-danger btn-sm" (click)="downVotes4(i)">Downvote</button>
+                      </p>
+                    </div><br>
+                  </div><br>
                 </div>
-                <div>
-                  <p> {{quote4.downvote}} <button class="downvote btn btn-danger btn-sm" (click)="downVotes4(i)">Downvote</button>
-                  </p>
-                </div><br>
-              </div><br>
+              </div>
             </ul>
           </div>
         </div>
@@ -158,27 +174,31 @@
         <div class="col-md-6">
           <div id="work">
             <ul *ngFor="let quote5 of quotes5; let i = index">
-              <div *ngIf="highestvote5() != quote5.upvote && quote5.upvote > 0; then highlight else empty"></div>
-              <ng-template #highlight>
-                <li appHighlight>{{quote5.quote}}</li>
-              </ng-template>
-              <ng-template #empty>
-                <li>{{quote5.quote}}</li>
-              </ng-template>
-              <div class="togglebtn">
-                <button (click)='toggleDetails5(i)' class="btn btn5">Details</button>
-              </div>
-              <div *ngIf='quote5.showDescription5'>
-                <app-minquote-details [quote1]="quote5"></app-minquote-details>
-                <div>
-                  <p> {{quote5.upvote}} <button class="upvote btn btn-success btn-sm" (click)="upVotes5(i)">Upvote</button>
-                  </p>
+              <div class="card" id="wet">
+                <div class="card-body">
+                  <div *ngIf="highestvote5() != quote5.upvote && quote5.upvote > 0; then highlight else empty"></div>
+                  <ng-template #highlight>
+                    <li appHighlight>{{quote5.quote}}</li>
+                  </ng-template>
+                  <ng-template #empty>
+                    <li>{{quote5.quote}}</li>
+                  </ng-template>
+                  <div class="togglebtn">
+                    <button (click)='toggleDetails5(i)' class="btn btn5">Details</button>
+                  </div>
+                  <div *ngIf='quote5.showDescription5'>
+                    <app-minquote-details [quote1]="quote5"></app-minquote-details>
+                    <div>
+                      <p> {{quote5.upvote}} <button class="upvote btn btn-success btn-sm" (click)="upVotes5(i)">Upvote</button>
+                      </p>
+                    </div>
+                    <div>
+                      <p> {{quote5.downvote}} <button class="downvote btn btn-danger btn-sm" (click)="downVotes5(i)">Downvote</button>
+                      </p>
+                    </div><br>
+                  </div><br>
                 </div>
-                <div>
-                  <p> {{quote5.downvote}} <button class="downvote btn btn-danger btn-sm" (click)="downVotes5(i)">Downvote</button>
-                  </p>
-                </div><br>
-              </div><br>
+              </div>    
             </ul>
           </div>
         </div>
@@ -188,5 +208,4 @@
       </div>
     </div>
   </div>
-  <hr>
 </div>
