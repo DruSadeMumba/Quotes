@@ -2,6 +2,7 @@ footer img  {
 	height: 50px;
 	width: 50px;
 	margin-left: 100px;
+	border-radius: 50px;
 }
 footer  {
 	text-align: center;
@@ -16,10 +17,15 @@ footer  {
 	#line  {
 		width: 0.1rem;
 		height: 350px;
-		background-color: black;
+		background-color: white;
     margin-left: 100px;
 	}
 }
 .card-footer  {
-	background-color: bisque;
+	background-color: rgb(33,37,41);
+	color: white;
+}
+#container2  {
+	background-color: rgb(33,37,41);
+	color: white;
 }
