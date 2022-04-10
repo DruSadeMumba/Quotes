@@ -48,6 +48,16 @@ export class MinquoteComponent implements OnInit {
     this.quotes1[index].showDescription1 = !this.quotes1[index].showDescription1;
   }
 
+  deleteQuote1(isComplete: any, index: number){
+    if (isComplete) {
+      let toDelete = confirm(`Are you sure you want to delete: ${this.quotes1[index].quote}?`)
+
+      if (toDelete){
+        this.quotes1.splice(index,1);
+      }
+    }
+  }
+
 
   quotes2:Quote1[] = [
     new Quote1 (1, " Education is the passport to the future, for tomorrow belongs to those who prepare for it today.", " Malcom X", "Anonymous", new Date(2000,0,1), 0, 0),
@@ -87,6 +97,15 @@ export class MinquoteComponent implements OnInit {
     this.quotes2[index].showDescription2 = !this.quotes2[index].showDescription2;
   }
   
+  deleteQuote2(isComplete: any, index: number){
+    if (isComplete) {
+      let toDelete = confirm(`Are you sure you want to delete: ${this.quotes2[index].quote}?`)
+
+      if (toDelete){
+        this.quotes2.splice(index,1);
+      }
+    }
+  }
 
   quotes3:Quote1[] = [
     new Quote1 (1, " When I do good I feel good, when I do bad I feel bad. That's my religion", " Abraham Lincoln", "Anonymous", new Date(2000,0,1), 0, 0),
@@ -125,6 +144,15 @@ export class MinquoteComponent implements OnInit {
     this.quotes3[index].showDescription3 = !this.quotes3[index].showDescription3;
   }
 
+  deleteQuote3(isComplete: any, index: number){
+    if (isComplete) {
+      let toDelete = confirm(`Are you sure you want to delete: ${this.quotes3[index].quote}?`)
+
+      if (toDelete){
+        this.quotes3.splice(index,1);
+      }
+    }
+  }
 
   quotes4:Quote1[] = [
     new Quote1 (1, " Assumptions are the termites of relationships", " Henry Winkler", "Anonymous", new Date(2000,0,1), 0, 0),
@@ -165,6 +193,15 @@ export class MinquoteComponent implements OnInit {
     this.quotes4[index].showDescription4 = !this.quotes4[index].showDescription4;
   }
 
+  deleteQuote4(isComplete: any, index: number){
+    if (isComplete) {
+      let toDelete = confirm(`Are you sure you want to delete: ${this.quotes4[index].quote}?`)
+
+      if (toDelete){
+        this.quotes4.splice(index,1);
+      }
+    }
+  }
 
   quotes5:Quote1[] = [
     new Quote1 (1, " Some people want it to happen, some wish it to happen, others make it happen", " Michael Jordan", "Anonymous", new Date(2000,0,1), 0, 0),
@@ -203,6 +240,15 @@ export class MinquoteComponent implements OnInit {
     this.quotes5[index].showDescription5 = !this.quotes5[index].showDescription5;
   }
 
+  deleteQuote5(isComplete: any, index: number){
+    if (isComplete) {
+      let toDelete = confirm(`Are you sure you want to delete: ${this.quotes5[index].quote}?`)
+
+      if (toDelete){
+        this.quotes5.splice(index,1);
+      }
+    }
+  }
 
   constructor() { }
 

@@ -19,7 +19,6 @@
                     <button (click)='toggleDetails1(i)' class="btn btn1">Details</button>
                   </div>
                   <div *ngIf='quote1.showDescription1'>
-                    <app-minquote-details [quote1] = "quote1"></app-minquote-details>
                     <div>
                       <p> {{quote1.upvote}} <button class="upvote btn btn-success btn-sm" (click)="upVotes1(i)">Upvote</button>
                       </p>
@@ -28,6 +27,7 @@
                       <p> {{quote1.downvote}} <button class="downvote btn btn-danger btn-sm" (click)="downVotes1(i)">Downvote</button>
                       </p>
                     </div><br>
+                    <app-minquote-details [quote1]='quote1' (isComplete) = 'deleteQuote1($event,i)'></app-minquote-details>
                   </div><br>
                 </div>
               </div>
@@ -61,7 +61,6 @@
                     <button (click)='toggleDetails2(i)' class="btn btn2">Details</button>
                   </div>
                   <div *ngIf='quote2.showDescription2'>
-                    <app-minquote-details [quote1] = "quote2"></app-minquote-details>
                     <div>
                       <p> {{quote2.upvote}} <button class="upvote btn btn-success btn-sm" (click)="upVotes2(i)">Upvote</button>
                       </p>
@@ -70,6 +69,7 @@
                       <p> {{quote2.downvote}} <button class="downvote btn btn-danger btn-sm" (click)="downVotes2(i)">Downvote</button>
                       </p>
                     </div><br>
+                    <app-minquote-details [quote1]='quote2' (isComplete) = 'deleteQuote2($event,i)'></app-minquote-details>
                   </div><br>
                 </div>
               </div>
@@ -103,7 +103,6 @@
                     <button (click)='toggleDetails3(i)' class="btn btn3">Details</button>
                   </div>
                   <div *ngIf='quote3.showDescription3'>
-                    <app-minquote-details [quote1] = "quote3"></app-minquote-details>
                     <div>
                       <p> {{quote3.upvote}} <button class="upvote btn btn-success btn-sm" (click)="upVotes3(i)">Upvote</button>
                       </p>
@@ -112,6 +111,7 @@
                       <p> {{quote3.downvote}} <button class="downvote btn btn-danger btn-sm" (click)="downVotes3(i)">Downvote</button>
                       </p>
                     </div><br>
+                    <app-minquote-details [quote1]='quote3' (isComplete) = 'deleteQuote3($event,i)'></app-minquote-details>
                   </div><br>
                 </div>
               </div>
@@ -145,7 +145,6 @@
                     <button (click)='toggleDetails4(i)' class="btn btn4">Details</button>
                   </div>
                   <div *ngIf='quote4.showDescription4'>
-                    <app-minquote-details [quote1] = "quote4"></app-minquote-details>
                     <div>
                       <p> {{quote4.upvote}} <button class="upvote btn btn-success btn-sm" (click)="upVotes4(i)">Upvote</button>
                       </p>
@@ -154,6 +153,7 @@
                       <p> {{quote4.downvote}} <button class="downvote btn btn-danger btn-sm" (click)="downVotes4(i)">Downvote</button>
                       </p>
                     </div><br>
+                    <app-minquote-details [quote1]='quote4' (isComplete) = 'deleteQuote4($event,i)'></app-minquote-details>
                   </div><br>
                 </div>
               </div>
@@ -187,7 +187,6 @@
                     <button (click)='toggleDetails5(i)' class="btn btn5">Details</button>
                   </div>
                   <div *ngIf='quote5.showDescription5'>
-                    <app-minquote-details [quote1]="quote5"></app-minquote-details>
                     <div>
                       <p> {{quote5.upvote}} <button class="upvote btn btn-success btn-sm" (click)="upVotes5(i)">Upvote</button>
                       </p>
@@ -196,6 +195,7 @@
                       <p> {{quote5.downvote}} <button class="downvote btn btn-danger btn-sm" (click)="downVotes5(i)">Downvote</button>
                       </p>
                     </div><br>
+                    <app-minquote-details [quote1]='quote5' (isComplete) = 'deleteQuote5($event,i)'></app-minquote-details>
                   </div><br>
                 </div>
               </div>    
