@@ -1,4 +1,4 @@
-input, textarea  {
+input, textarea, .card  {
   background-color: transparent;
   border-radius: 15px;
   border-color: black;
