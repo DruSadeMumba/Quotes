@@ -131,7 +131,7 @@ export class MinquoteComponent implements OnInit {
     upVotes3.sort(function (a, b) {
       return a - b
     })
-    highest3 = upVotes3[1]
+    highest3 = upVotes3[0]
     return highest3;
   }
 
@@ -179,7 +179,7 @@ export class MinquoteComponent implements OnInit {
     upVotes4.sort(function (a, b) {
       return a - b
     })
-    highest4 = upVotes4[1]
+    highest4 = upVotes4[0]
     return highest4;
   }
 
@@ -227,7 +227,7 @@ export class MinquoteComponent implements OnInit {
     upVotes5.sort(function (a, b) {
       return a - b
     })
-    highest5 = upVotes5[1]
+    highest5 = upVotes5[0]
     return highest5;
   }
 
