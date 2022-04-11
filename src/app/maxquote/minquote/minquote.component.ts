@@ -172,8 +172,8 @@ export class MinquoteComponent implements OnInit {
   highestvote4() {
     let upVotes4 = []
     let highest4 : number
-    for (let i = 0; i < this.quotes4.length; i++ ) {
-      upVotes4.push(this.quotes4[i].upvote)
+    for (let j = 0; j < this.quotes4.length; j++ ) {
+      upVotes4.push(this.quotes4[j].upvote)
     }
 
     upVotes4.sort(function (a, b) {
@@ -220,8 +220,8 @@ export class MinquoteComponent implements OnInit {
   highestvote5() {
     let upVotes5 = []
     let highest5 : number
-    for (let i = 0; i < this.quotes5.length; i++ ) {
-      upVotes5.push(this.quotes5[i].upvote)
+    for (let j = 0; j < this.quotes5.length; j++ ) {
+      upVotes5.push(this.quotes5[j].upvote)
     }
 
     upVotes5.sort(function (a, b) {
