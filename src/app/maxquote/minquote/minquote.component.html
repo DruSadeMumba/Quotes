@@ -5,7 +5,7 @@
       <div class="row">
         <div class="col-md-6">
           <div id="healthandfitness">
-            <ul *ngFor="let quote1 of quotes1; let i = index">
+            <ul *ngFor="let quote1 of quotes1; let i = index ; let j = index">
               <div class="card" id="wet">
                 <div class="card-body">
                   <div *ngIf="highestvote1() != quote1.upvote &&  quote1.upvote > 0; then highlight else empty"></div>
@@ -20,11 +20,11 @@
                   </div>
                   <div *ngIf='quote1.showDescription1'>
                     <div>
-                      <p> {{quote1.upvote}} <button class="upvote btn btn-success btn-sm" (click)="upVotes1(i)">Upvote</button>
+                      <p> {{quote1.upvote}} <button class="upvote btn btn-success btn-sm" (click)="upVotes1(j)">Upvote</button>
                       </p>
                     </div>
                     <div>
-                      <p> {{quote1.downvote}} <button class="downvote btn btn-danger btn-sm" (click)="downVotes1(i)">Downvote</button>
+                      <p> {{quote1.downvote}} <button class="downvote btn btn-danger btn-sm" (click)="downVotes1(j)">Downvote</button>
                       </p>
                     </div><br>
                     <app-minquote-details [quote1]='quote1' (isComplete) = 'deleteQuote1($event,i)'></app-minquote-details>
