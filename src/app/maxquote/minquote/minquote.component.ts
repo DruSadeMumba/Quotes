@@ -24,18 +24,18 @@ export class MinquoteComponent implements OnInit {
    highestvote1() {
     let upVotes1 = []
     let highest1 : number
-    for (let i = 0; i < this.quotes1.length; i++ ) {
-      upVotes1.push(this.quotes1[i].upvote)
+    for (let j = 0; j < this.quotes1.length; j++ ) {
+      upVotes1.push(this.quotes1[j].upvote)
     }
 
     upVotes1.sort(function (a, b) {
-      return a - b
+      return  a - b
     })
-    highest1 = upVotes1[0]
+    highest1 = upVotes1[1]
     return highest1;
   } 
    /* arr1: number[] = this.quotes1.map(quote=>quote.upvote)
-  highest1 = Math.max(...this.arr1)  */
+  highest1 = Math.max(...this.arr1) */  
 
   upVotes1(index: number): void{
     this.quotes1[index].upvote ++;
@@ -82,7 +82,7 @@ export class MinquoteComponent implements OnInit {
     upVotes2.sort(function (a, b) {
       return a - b
     })
-    highest2 = upVotes2[0]
+    highest2 = upVotes2[1]
     return highest2;
   }
 
@@ -130,7 +130,7 @@ export class MinquoteComponent implements OnInit {
     upVotes3.sort(function (a, b) {
       return a - b
     })
-    highest3 = upVotes3[0]
+    highest3 = upVotes3[1]
     return highest3;
   }
 
@@ -178,7 +178,7 @@ export class MinquoteComponent implements OnInit {
     upVotes4.sort(function (a, b) {
       return a - b
     })
-    highest4 = upVotes4[0]
+    highest4 = upVotes4[1]
     return highest4;
   }
 
@@ -226,7 +226,7 @@ export class MinquoteComponent implements OnInit {
     upVotes5.sort(function (a, b) {
       return a - b
     })
-    highest5 = upVotes5[0]
+    highest5 = upVotes5[1]
     return highest5;
   }
 
