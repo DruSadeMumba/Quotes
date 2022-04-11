@@ -23,23 +23,24 @@ export class MinquoteComponent implements OnInit {
   
    highestvote1() {
     let upVotes1 = []
-    let highest1 : number
-    for (let j = 0; j < this.quotes1.length; j++ ) {
+    let highest1 : number 
+    for (let j = 0; j < this.quotes1.length; j++) {
       upVotes1.push(this.quotes1[j].upvote)
     }
 
     upVotes1.sort(function (a, b) {
       return  a - b
     })
-    highest1 = upVotes1[1]
+    highest1 = upVotes1[0]
     return highest1;
   } 
-   /* arr1: number[] = this.quotes1.map(quote=>quote.upvote)
-  highest1 = Math.max(...this.arr1) */  
+    arr1: number[] = this.quotes1.map(quote=>quote.upvote)
+    highest1 = Math.max(...this.arr1)  
 
-  upVotes1(index: number): void{
+   upVotes1(index: number): void{
     this.quotes1[index].upvote ++;
-  } 
+
+  }  
    downVotes1(index: number): void{
     this.quotes1[index].downvote ++;
   } 
@@ -75,14 +76,14 @@ export class MinquoteComponent implements OnInit {
   highestvote2() {
     let upVotes2 = []
     let highest2 : number
-    for (let i = 0; i < this.quotes2.length; i++ ) {
-      upVotes2.push(this.quotes2[i].upvote)
+    for (let j = 0; j < this.quotes2.length; j++ ) {
+      upVotes2.push(this.quotes2[j].upvote)
     }
 
     upVotes2.sort(function (a, b) {
       return a - b
     })
-    highest2 = upVotes2[1]
+    highest2 = upVotes2[0]
     return highest2;
   }
 
@@ -123,8 +124,8 @@ export class MinquoteComponent implements OnInit {
   highestvote3() {
     let upVotes3 = []
     let highest3 : number
-    for (let i = 0; i < this.quotes3.length; i++ ) {
-      upVotes3.push(this.quotes3[i].upvote)
+    for (let j = 0; j < this.quotes3.length; j++ ) {
+      upVotes3.push(this.quotes3[j].upvote)
     }
 
     upVotes3.sort(function (a, b) {
