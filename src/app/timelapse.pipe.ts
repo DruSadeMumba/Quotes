@@ -13,7 +13,7 @@ export class TimelapsePipe implements PipeTransform {
     var dateDifference1Seconds = dateDifference1*0.001; 
     var timelapse = dateDifference1Seconds/secondsInDay;
 
-      return (timelapse +  " days have passed since this quote was submitted by");
+      return (timelapse.toFixed(0) +  " days have passed since this quote was submitted by");
     
   } 
 
